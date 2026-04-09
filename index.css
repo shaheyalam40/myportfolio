@@ -290,9 +290,14 @@ nav{
   justify-content: center;
 }
 
+nav ul{
+   gap: 25px;
+}
+
   .hero-image{
-    display: none; 
+    display: none;   /* 👈 ye add karo */
   }
+
 
 
 }
