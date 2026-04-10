@@ -37,8 +37,7 @@
     nav a:hover {
       color: #38BDF8;
     }
-
-/* HERO */
+ 
 .hero{
   height: 100vh;
   display: flex;
@@ -52,11 +51,14 @@
   justify-content: space-between;
   align-items: center;
 }
-
-/* LEFT TEXT */
+ 
 .hero-text h1{
   font-size: 50px;
   margin-bottom: 10px;
+}
+
+.port span{
+color: #38bdf8;
 }
 
 .hero-text span{
@@ -75,7 +77,7 @@
   margin-bottom: 20px;
 }
 
-/* BUTTON */
+ 
 .btn{
   display: inline-block;
   padding: 12px 28px;
@@ -86,12 +88,7 @@
   transition: 0.3s;
 }
 
-.btn:hover{
-  background: #0ea5e9;
-  transform: scale(1.05);
-}
-
-/* RIGHT IMAGE */
+ 
 .hero-image img{
   width: 320px;
   border-radius: 50%;
@@ -119,25 +116,14 @@
   text-align: center;
 }
 
-/* Heading Center */
+ 
 .about-heading {
   font-size: 40px;
   margin-bottom: 50px;
-  position: relative;
+   
 }
 
-/* Optional underline effect */
-.about-heading::after {
-  content: "";
-  width: 80px;
-  height: 3px;
-  background: #00f7ff;
-  display: block;
-  margin: 10px auto 0;
-  border-radius: 5px;
-}
-
-/* Layout */
+ 
 .about-container {
   display: flex;
   align-items: center;
@@ -147,14 +133,14 @@
   flex-wrap: wrap;
 }
 
-/* Image */
+ 
 .about-img img {
   width: 280px;
   border-radius: 20px;
   box-shadow: 0 0 25px #00f7ff50;
 }
 
-/* Text */
+ 
 .about-text {
   max-width: 600px;
 }
@@ -189,15 +175,6 @@
     position: relative;
 }
 
-.section-title::after {
-    content: "";
-    width: 80px;
-    height: 3px;
-    background: #38bdf8;
-    display: block;
-    margin: 10px auto;
-}
-
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -222,7 +199,6 @@
     color: #cbd5e1;
 }
 
-/* Hover Effect */
 .skill-card:hover {
     transform: translateY(-8px);
     background: #334155;
@@ -294,10 +270,16 @@ nav ul{
    gap: 25px;
 }
 
-  .hero-image{
-    display: none;   /* 👈 ye add karo */
+  .hero-image
+  { order: -1;}
+
+  .hero-image img{
+    margin-bottom: 30px;
+    width: 200px;
   }
-
-
+.btn{
+  display: none;
+}
 
 }
+

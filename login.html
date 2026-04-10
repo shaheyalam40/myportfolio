@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in </title>
+ </head>
+ <style>
+   body
+{
+background-color: rgba(11, 71, 71, 0.212);
+}
+
+main
+{
+text-align: center;
+//background-color: rgb(125, 151, 54);
+width: 50%;
+margin: auto;
+}
+table
+{
+    width:100%;
+    border:1px black solid;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+}
+input[type="text"]{width: 100%; height:20px; border:1px black solid;border-radius: 2px; box-shadow: 2px 2px 2px gray;}
+
+input[type="password"]{width: 100%; height:20px; border:1px black solid;border-radius: 2px; box-shadow: 2px 2px 2px gray;} 
+
+input[type="submit"]{width: 40%; height:30px; background-color:black; color: aliceblue;  border:0px black solid; border-radius: 2px;  box-shadow: 4px 4px 4px gray;} 
+
+input[type="reset"]{width: 40%; height:30px; background-color:red; color: aliceblue;  border:0px black solid; border-radius: 2px;  box-shadow: 4px 4px 4px gray;}  
+
+.textstyle
+    {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+     text-align: center;
+    }
+
+    .btnb {
+  color: rgb(24, 17, 17);
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 30px;
+ margin-top:50px;
+}
+
+
+ </style>
+ 
+ <body>
+   <a class="btnb" href="practicepage.html">⬅ Back</a>
+   <header>
+      <h1 class="textstyle">  Login Page </h1>
+   </header>
+   <main>
+      <table border="0" cellpadding="10">
+         <caption></caption>
+  <form action="" method="post">
+
+ <tr>   
+     <td><label  for="user id"> User Id </label></td>
+      <td><input id ="user id"  type="text" name="user id"></td>
+</tr>
+
+    <tr>
+     <td> <label for="upass" >Password</label></td>
+     <td> <input type="password" id="upass" name="upass"></td>
+    </tr>
+
+      <tr>
+      <td></td>
+      <td>
+
+      <input type="submit" value="login">
+      <input type="reset"></td>
+   </tr>
+
+   </form>
+   </table>
+
+
+    </main>
+ </body>
+ </html>
