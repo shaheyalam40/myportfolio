@@ -50,7 +50,20 @@ input[type="reset"]{width: 40%; height:30px; background-color:red; color: aliceb
  margin-top:50px;
 }
 
-
+@media only screen and (max-width: 600px)
+{
+  
+table
+{ 
+width: 150%;
+}
+main
+{
+width: 50%;
+margin-left: 60px;
+}
+ 
+}
  </style>
  
  <body>
@@ -64,13 +77,13 @@ input[type="reset"]{width: 40%; height:30px; background-color:red; color: aliceb
   <form action="" method="post">
 
  <tr>   
-     <td><label  for="user id"> User Id </label></td>
-      <td><input id ="user id"  type="text" name="user id"></td>
+     <td><label  for="user id" > User Id </label></td>
+      <td><input id ="user id"  type="text" name="user id" placeholder="user id" required></td>
 </tr>
 
     <tr>
      <td> <label for="upass" >Password</label></td>
-     <td> <input type="password" id="upass" name="upass"></td>
+     <td> <input type="password" id="upass" name="upass"  placeholder="Password" required></td>
     </tr>
 
       <tr>
