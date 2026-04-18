@@ -92,8 +92,8 @@ color: #38bdf8;
 .hero-image img{
   width: 320px;
   border-radius: 50%;
-  border: 2px solid #38bdf8;
-  box-shadow: 0 0 10px #38bdf8;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 10px #FFFFFF;
 }
 
 /* RESPONSIVE */
