@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>    .btnb {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+</style>
+<body>
+     <a class="btnb" href="jsprac.html">⬅ Back</a>
+    <h1>
+       No 1 <input type="number" id="t1" value="0"></br>
+       No 2 <input type="number" id="t2" value="0"></br></br>
+       result<input type="number" id="r" value="0"></br></br>
+
+        <button onclick="f1()">+</button>
+        <button onclick="f2()">--</button>
+        <button onclick="f3()">*</button>
+        <button onclick="f4()">/</button>
+
+    <script>
+        var n1 = document.getElementById("t1")
+        var n2 = document.getElementById("t2")
+        var n3 = document.getElementById("r")
+
+            function f1()
+            {
+               // alert("chal ")
+               var sum = parseInt(n1.value)+parseInt(n2.value) 
+               n3.value=sum
+            }
+
+               function f2()
+            {
+               // alert("chal ")
+               var sum = parseInt(n1.value)-parseInt(n2.value) 
+               n3.value=sum
+            }
+
+               function f3()
+            {
+               // alert("chal ")
+               var sum = parseInt(n1.value)*parseInt(n2.value) 
+               n3.value=sum
+            }
+
+               function f4()
+            {
+               // alert("chal ")
+               var sum = parseInt(n1.value)/parseInt(n2.value) 
+               n3.value=sum
+            }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       .btnb {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+</style>
+<body>
+    <a class="btnb" href="jsprac.html">⬅ Back</a>
+    <script src="lib.js"></script>
+    <h1 id="myheading">using external javascript</h1>
+    <button id="b1">sum</button>
+    <script>
+        var b = document.createElement("button")
+        document.body.appendChild(b)
+        b.innerHTML = "click"
+        
+       // Calling a Function 
+       // wel()
+       // Calling a Function on document click
+       // document.onclick=wel
+
+
+        var h = document.getElementById("myheading")
+        h.style.color="whitesmoke"
+        h.style.cursor="pointer"
+     //   alert(h.id)
+         h.onclick=wel
+         b.onclick=wel
+
+         var n1,n2
+         var t=0
+         function sum()
+         {
+            n1=prompt("enter no 1","0")
+            n2=prompt("enter no 2","0")
+            t = parseInt(n1)+parseInt(n2)
+            alert(t)
+         }
+
+        var mybutton = document.getElementById("b1")
+        mybutton.onclick=sum
+
+        document.title="no error"
+
+
+
+
+
+    </script>
+</body>
+</html>

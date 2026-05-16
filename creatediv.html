@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box
+    {
+        
+        border-radius: 10px;
+        transition: 0.50s;
+        width: 400px;
+        //height: 400px;
+        border: 2px black solid ;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        //top: 100px;
+        //left:100px;
+        text-align:center;
+        
+    }
+    .mystyle{
+       // background: rgb(199, 194, 194);
+    }
+
+       .btnb {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+</style>
+<body>
+      <a class="btnb" href="jsprac.html">⬅ Back</a>
+    <script>
+        document.title="create element"
+
+        var d = document.createElement("div")
+        document.body.appendChild(d)
+
+        d.className="box mystyle"
+
+        d.innerHTML="<button style='margin-top:30px; margin-left:300px;width:40px;height:30px;'onclick='closedilog()'>X</button>"
+
+        d.innerHTML+="<h1 >Coffee</h1>"
+        d.innerHTML+="<hr color='black' size='3'/>"
+        d.innerHTML+="<img src=photo/coffee.jpg style='width:100%  '>"
+ 
+        function closedilog()
+        {
+            document.body.removeChild(d)
+        }
+
+    </script>  
+</body>
+</html>

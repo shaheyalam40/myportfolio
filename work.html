@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+</head>
+<style>
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
+
+    nav{
+         display: flex;
+         justify-content: center;
+         padding: 20px  5%;
+         background-color:#0f172a;
+         position: sticky;
+         top: 0;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+ nav a {
+      color:#E2E8F0;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #38BDF8;
+    }
+
+ 
+
+    #section1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+ 
+   
+}
+    .container{
+    background-color: white;
+    color: black;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.text{
+    font-size: 30px;
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+.img{
+    width: 100%;
+     height: 180px;
+   object-fit: cover; 
+}
+ .container:hover{
+    transform: scale(1.08);
+}
+.btnb {
+  color: rgb(24, 17, 17);
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 70px;
+ margin-top: 50px;
+}
+.card-link{
+    text-decoration: none;
+}
+
+
+.footer {
+  background: #0f172a;
+  color: #fff;
+  padding: 40px 10%;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-box {
+  flex: 1 1 200px;
+}
+
+.footer-box h3 {
+  margin-bottom: 15px;
+}
+
+.footer-box p {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin: 8px 0;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #94a3b8;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #38bdf8;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #1e293b;
+  padding-top: 15px;
+  color: #94a3b8;
+}
+
+</style>
+<header>
+    <nav>
+   
+  <ul>
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+</nav>
+</header>
+<body>
+
+    <a class="btnb" href="index.html">⬅ Back</a>
+    <section  id="section1">
+        
+                 <a href="practicepage.html"class="card-link"  >
+                <div class="container" >
+            <div > <img class="img" src="photo/html.png">
+                <div class="text">html&css</div>
+            </div>
+        </div></a>
+
+        <a href="jsprac.html"class="card-link"  >
+         <div class="container">
+            <div > <img class="img" src="photo/js.png">
+                <div class="text">javascript</div>
+            </div>
+        </div></a>
+
+         <a href="aotm.html"class="card-link" >
+         <div class="container">
+            <div > <img class="img" src="photo/project.png">
+                <div class="text">project</div>
+            </div>
+        </div></a>
+        
+
+    </section>
+    <section>    <footer class="footer" id="Contact"> 
+  <div class="footer-container">
+
+    <!-- Left Section -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>9211750329<br/>shaheyalam40@gmail.com</p>
+    </div>
+
+    <!-- links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+         <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 Shahey Alam | All Rights Reserved</p>
+  </div>
+</footer>
+</section>
+
+</body>
+</html>

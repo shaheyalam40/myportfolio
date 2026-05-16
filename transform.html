@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+@keyframes ani 
+{
+   //from{transform: rotateY(0deg) rotateX(0deg) rotateZ(0);}
+   //to{transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);}
+
+   form{transform: rotateZ(0);}
+   to{transform: rotateZ(360deg);}
+}
+
+    #main
+    {
+        background: black;
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        perspective: 300px;
+        margin-top: 20PX;
+        
+    }
+
+    #card
+    {
+        width: 300px;
+        height: 300px;
+       //background: rgb(247,73,73);
+       // padding-top: 10%;
+        position: relative;
+        left: 100px;
+        top: 150px;
+       // backface-visibility: hidde;
+        animation: ani 5s infinite ;
+    }
+.pic
+{
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+#world
+{
+    display: block;
+    top: 0px;
+    backface-visibility: visible;
+}
+#coffee
+{
+    display: block;
+    top: -200px;
+    left:- 100px;
+    backface-visibility: hidden;
+}
+        .btnb {
+  color: rgb(24, 17, 17);
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 30px;
+ margin-top:50px;
+}
+</style>
+
+<body>
+     <a class="btnb" href="practicepage.html">⬅ Back</a>
+    <div id="main">
+    <div id="card">
+            <img id="world" class="pic" src="photo/bmw.jpg">
+             <img id="coffee" class="pic" src="photo/bmw.jpg">
+    </div>
+    </div>
+    
+</body>
+</html>

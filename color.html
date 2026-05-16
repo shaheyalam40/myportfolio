@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>    .btnb {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+</style>
+<body>
+     <a class="btnb" href="jsprac.html">⬅ Back</a>
+    <script>
+        var b = document.createElement("button")
+        document.body.appendChild(b)
+        b. innerHTML= "create random color of background "
+        function randomcolor()
+        {
+           document.title="working"
+            var red = Math.round(Math.random()*365)
+            var green = Math.round(Math.random()*365)
+            var blue = Math.round(Math.random()*365)
+            var c = "rgb("+red+","+green+","+blue+")"
+          // alert(c)
+            document.body.style.background = c
+        }
+
+        b.onclick = randomcolor
+
+
+
+
+    </script>
+    
+</body>
+</html>
