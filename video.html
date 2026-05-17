@@ -14,7 +14,7 @@
         font-size: 30px;
         text-transform: uppercase;
         font-family: arial black;
-        background: teal;
+        background: blue;
         color: white;
         text-align: center;
         box-sizing: border-box;
@@ -48,6 +48,18 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+@media only screen and (max-width: 600px)
+{
+    
+ video{
+    width: 100%;
+    
+    margin-top: -350px;
+    margin-bottom: 20px;
+}
+
+}
 </style>
 
 <header>
@@ -58,13 +70,11 @@ body{
     <main>
       
         <video controls width="1000" height="1000" autoplay loop >
-            <source src="photo/cat.mp4" type="video/mp4">
-            <h1>update your browser/ this video is not supported in your web browser</h1>
+            <source    src="photo/cat.mp4" type="video/mp4">
         </video>
 
           <audio controls width="200" height="200" autoplay loop muted >
             <source src="photo/sound.mp3" type="audio/mp3">
-            <h1>update your browser/ this audio is not supported in your web browser</h1>
         </audio>
 
 
