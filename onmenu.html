@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #nav
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #m1,#m2,#m3
+    {
+        width: 80px;
+        margin-top: 20px;
+        background: black;
+        color: white;
+        
+    }
+    li{
+        list-style-type: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    li:hover
+    {
+         background: gray;
+         color: black;
+    }
+    .toggle
+    {
+       display: none;
+    }
+
+           .btnb {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+</style>
+<body>
+    <a class="btnb" href="jsprac.html">⬅ Back</a>
+    <div id="nav">
+        <div>
+            <button onclick="shd(event)" id="menu1">Main</button>
+
+            <ol id="m1" class="toggle">
+                <li>Main</li>
+                <li>project</li>
+                <li>practice</li>  
+            </ol>
+        </div>
+
+          <div>
+            <button onclick="shd(event)" id="menu2">Main</button>
+
+            <ol id="m2" class="toggle">
+                <li>Main</li>
+                <li>project</li>
+                <li>practice</li>  
+            </ol>
+        </div>
+
+          <div>
+            <button onclick="shd(event)" id="menu3">Main</button>
+
+            <ol id="m3" class="toggle">
+                <li>Main</li>
+                <li>project</li>
+                <li>practice</li>  
+            </ol>
+        </div>
+    </div>
+    <script>
+        var menu_visible = false;
+
+        function shd(event)
+        {
+           var mid = event.target.id
+
+           m1.classList.add("toggle");
+           m2.classList.add("toggle");
+           m3.classList.add("toggle");
+
+
+           switch(mid)
+           {
+            case "menu1":
+                m1.classList.remove("toggle");
+                document.title="menu1"
+                break;
+
+                 case "menu2":
+                m2.classList.remove("toggle");
+                document.title="menu2"
+                break;
+
+                 case "menu3":
+                m3.classList.remove("toggle");
+                document.title="menu3"
+                break;
+           }
+        }
+
+        window.onclick=function(event)
+        {
+          //  alert(event.target)
+          if( (event.target == "[object HTMLElement]")||(event.target == "[object HTMLUnknownElement]"))
+          {
+            m1.classList.add("toggle");
+              m2.classList.add("toggle");
+                m3.classList.add("toggle");
+          }
+        }
+
+       document.title="no error"
+    </script>
+    
+</body>
+
+</html>

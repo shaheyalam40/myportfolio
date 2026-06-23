@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --dark:rgb(9,8,8);
+        --light:white;
+        --tcolor:green;
+    }
+
+               .btnb {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+</style>
+<body>
+    <a class="btnb" href="jsprac.html">⬅ Back</a>
+    <button id="b">🌙</button>
+    <script>
+        var b = document.getElementById("b")
+
+        b.onclick= function()
+        {
+            if (b.innerHTML == "🌙")
+        {
+            b.innerHTML = "☀️"
+            document.body.style.background="var(--dark)"
+            document.body.style.color="var(--light)"
+        }
+        else{
+            b.innerHTML="🌙"
+            document.body.style.background="var(--light)"
+             document.body.style.color="var(--dark)"
+
+        }
+        }
+
+    </script>
+    <h1>about</h1>
+    <p>AI Overview               A Letter of Recommendation (LOR) is a formal document in which a professor, employer, or mentor endorses an applicant’s skills, character, and achievements. It provides admissions committees or employers with an objective evaluation of a candidate's suitability for a program or jobAI Overview               A Letter of Recommendation (LOR) is a formal document in which a professor, employer, or mentor endorses an applicant’s skills, character, and achievements. It provides admissions committees or employers with an objective evaluation of a candidate's suitability for a program or job</p>
+    
+</body>
+</html>

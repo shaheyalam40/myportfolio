@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#clock
+{
+    color: white;
+    background: blue;
+    font-size: 50px;
+    width: 250px;
+    font-family: arial black;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 10px gray;
+
+}
+
+
+              .btnb {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+</style>
+<body>
+     <a class="btnb" href="jsprac.html">⬅ Back</a>
+    <h1>working with date class in html</h1>
+    <div id="clock">Date</div>
+    <button onclick="st()">start </button>
+     <button  onclick="sto()">stop </button>
+
+         <script>
+            function show()
+            {
+                var d = new Date()
+                var t = document.getElementById("clock")
+                t.innerHTML= d.toLocaleTimeString()
+
+            }
+
+var timer
+function st()
+{
+    timer=setInterval("show()",1000)
+}
+function sto()
+{ 
+    clearInterval(timer)
+}
+
+
+     </script>
+</body>
+</html>
