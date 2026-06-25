@@ -19,14 +19,21 @@
         color: white;
         
     }
+
+    ol
+     { padding-left: 0;
+         margin: 0;
+     }
+
     li{
         list-style-type: none;
         padding: 10px;
         cursor: pointer;
+      
     }
     li:hover
     {
-         background: gray;
+         background: orange;
          color: black;
     }
     .toggle
@@ -50,9 +57,9 @@
             <button onclick="shd(event)" id="menu1">Main</button>
 
             <ol id="m1" class="toggle">
-                <li>Main</li>
-                <li>project</li>
-                <li>practice</li>  
+                <li>Home</li>
+                <li>About</li>
+                <li>Work</li>  
             </ol>
         </div>
 
@@ -61,8 +68,8 @@
 
             <ol id="m2" class="toggle">
                 <li>Main</li>
-                <li>project</li>
-                <li>practice</li>  
+                <li>Project</li>
+                <li>Practice</li>  
             </ol>
         </div>
 
@@ -70,9 +77,9 @@
             <button onclick="shd(event)" id="menu3">Main</button>
 
             <ol id="m3" class="toggle">
-                <li>Main</li>
-                <li>project</li>
-                <li>practice</li>  
+                <li>About </li>
+                <li>Help</li>
+                <li>Contact</li>  
             </ol>
         </div>
     </div>
@@ -107,16 +114,26 @@
            }
         }
 
-        window.onclick=function(event)
+     /*   window.onclick=function(event)
         {
           //  alert(event.target)
-          if( (event.target == "[object HTMLElement]")||(event.target == "[object HTMLUnknownElement]"))
+          if((event.target == "[object HTMLDivElement]")|| (event.target == "[object HTMLElement]")||(event.target == "[object HTMLUnknownElement]"))
           {
             m1.classList.add("toggle");
               m2.classList.add("toggle");
                 m3.classList.add("toggle");
           }
-        }
+        }*/
+
+        window.onclick = function(event)
+{
+    if(!event.target.matches("button"))
+    {
+        m1.classList.add("toggle");
+        m2.classList.add("toggle");
+        m3.classList.add("toggle");
+    }
+}
 
        document.title="no error"
     </script>
