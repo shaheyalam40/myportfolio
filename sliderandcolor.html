@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+   #mask{
+    width:400px;
+    height:400px;
+    overflow:hidden;
+    margin:auto;
+    border:2px solid #000;
+    margin-top: 50px;
+}
+
+#box{
+    width:2800px;
+    white-space:nowrap;
+}
+
+.pic{
+    width:400px;
+    height:400px;
+    display:inline-block;
+}
+
+#slider{
+    width:400px;
+    display:block;
+    margin:15px auto;
+}
+
+
+       .btnb {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+</style>
+<body>
+     <a class="btnb" href="jsprac.html">⬅ Back</a>
+
+    <div id="mask">
+    <div id="box">
+        <img src="photo/b1.jpg" class="pic">
+        <img src="photo/b2.jpg" class="pic">
+        <img src="photo/b3.jpg" class="pic">
+        <img src="photo/b4.jpg" class="pic">
+        <img src="photo/b5.jpg" class="pic">
+        <img src="photo/b6.jpg" class="pic">
+        <img src="photo/b7.jpg" class="pic">
+    </div>
+</div>
+
+<input type="range" min="0" max="2400" value="0" id="slider" oninput="move()">
+    <script>
+      /*  function move()
+        {
+            var slider = document.getElementById("slider");
+            
+            var box = document.getElementById("box");
+
+            box.style.marginLeft = -slider.value + "px";
+        }*/
+       function move() {
+    var slider = document.getElementById("slider");
+    var box = document.getElementById("box");
+
+    box.style.marginLeft = "-" + slider.value + "px";
+}
+    </script>
+</body>
+</html>
