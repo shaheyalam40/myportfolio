@@ -201,8 +201,10 @@ color: #38bdf8;
 }
 
 .skill-card:hover {
-    transform: translateY(-8px);
+   // transform: translateY(-8px);
+   // background: #334155;
     background: #334155;
+  box-shadow:0px 0px 10px #38BDF8;
 }
 
 .co{
